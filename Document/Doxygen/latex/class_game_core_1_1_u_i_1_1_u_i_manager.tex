@@ -1,0 +1,273 @@
+\hypertarget{class_game_core_1_1_u_i_1_1_u_i_manager}{}\doxysection{Game\+Core.\+UI.\+UIManager Class Reference}
+\label{class_game_core_1_1_u_i_1_1_u_i_manager}\index{GameCore.UI.UIManager@{GameCore.UI.UIManager}}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_game_core_1_1_u_i_1_1_u_i_manager_a73c312ba9ff4bdccc7b212aab2c59c1d}{Set\+Canvas}} (Game\+Object go, bool sort=true)
+\begin{DoxyCompactList}\small\item\em 캔버스 설정, Scene\+UI는 sort = false, Popup\+UI는 sort = true \end{DoxyCompactList}\item 
+T \mbox{\hyperlink{class_game_core_1_1_u_i_1_1_u_i_manager_a89a4b35c5da1fd8124f6820477370b8e}{Make\+World\+Space\+UI$<$ T $>$}} (Transform parent=null, string name=null)
+\begin{DoxyCompactList}\small\item\em World\+Space\+UI생성 함수 \end{DoxyCompactList}\item 
+T \mbox{\hyperlink{class_game_core_1_1_u_i_1_1_u_i_manager_ae06bffa94b682ea0741c204475b1607b}{Make\+Sub\+Item$<$ T $>$}} (Transform parent=null, string name=null)
+\begin{DoxyCompactList}\small\item\em Sub\+Item생성 함수 \end{DoxyCompactList}\item 
+Game\+Object \mbox{\hyperlink{class_game_core_1_1_u_i_1_1_u_i_manager_a908c7f1609029f2d057455192a6bb37b}{Show\+Scene\+UI}} (\mbox{\hyperlink{class_define_a764a80dc9b0829e84b9b05d88abb6d98}{Define.\+Scene\+UIType}} scene\+UIType, string name)
+\begin{DoxyCompactList}\small\item\em Scene\+UI를 생성하는 합수 \end{DoxyCompactList}\item 
+Game\+Object \mbox{\hyperlink{class_game_core_1_1_u_i_1_1_u_i_manager_a76f4edfe708865c7c6d12b6fdb467233}{Show\+Popup\+UI}} (\mbox{\hyperlink{class_define_aa509de024dc897309ae4080d1bfea5f5}{Define.\+Popup\+UIType}} popup\+UIType, string name)
+\begin{DoxyCompactList}\small\item\em Popup\+UI를 생성하는 함수 \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_game_core_1_1_u_i_1_1_u_i_manager_ada55c9bebf124c8580cec541e04f8807}{Close\+Scene\+UI}} (\mbox{\hyperlink{class_define_a764a80dc9b0829e84b9b05d88abb6d98}{Define.\+Scene\+UIType}} scene\+UIType)
+\begin{DoxyCompactList}\small\item\em Scene\+UI Dictionary에 저장된 지정\+UI 제거 \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_game_core_1_1_u_i_1_1_u_i_manager_a1a0ff74390c6c06312826ac5c5d7c88e}{Close\+All\+Scene\+UI}} ()
+\begin{DoxyCompactList}\small\item\em Scene\+UI Dictionary에 저장된 모든\+UI 제거 \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_game_core_1_1_u_i_1_1_u_i_manager_a450d4bded31d6e5c1cf7f36e70c1edf1}{Close\+Popup\+UI}} (\mbox{\hyperlink{class_define_aa509de024dc897309ae4080d1bfea5f5}{Define.\+Popup\+UIType}} popup\+UIType)
+\begin{DoxyCompactList}\small\item\em Popup\+UI Dictionary에 저장된 지정\+UI 제거 \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_game_core_1_1_u_i_1_1_u_i_manager_a48f97a1bb1aefce0fc3311f39a0efb45}{Close\+All\+Popup\+UI}} ()
+\begin{DoxyCompactList}\small\item\em Popup\+UI Dictionary에 저장된 모든\+UI 제거 \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_game_core_1_1_u_i_1_1_u_i_manager_ac08f518b4f0c2eed6caec771f6067e62}{Clear}} ()
+\begin{DoxyCompactList}\small\item\em 모든 Scene\+UI, Popup\+UI를 제거 \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_game_core_1_1_u_i_1_1_u_i_manager_add00854e9b51616cb60b0b56879f108f}\label{class_game_core_1_1_u_i_1_1_u_i_manager_add00854e9b51616cb60b0b56879f108f}} 
+Game\+Object {\bfseries Root\+\_\+\+UI}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em 모든 UI의 부모 오브젝트 \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_game_core_1_1_u_i_1_1_u_i_manager_a6091ad1eb5b416cb65514878b3c72e45}\label{class_game_core_1_1_u_i_1_1_u_i_manager_a6091ad1eb5b416cb65514878b3c72e45}} 
+Game\+Object {\bfseries Root\+\_\+\+Scene}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em 모든 Scene\+UI의 부모 오브젝트 \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_game_core_1_1_u_i_1_1_u_i_manager_a6ddf4d622ddadf0ca2d12e28e635898b}\label{class_game_core_1_1_u_i_1_1_u_i_manager_a6ddf4d622ddadf0ca2d12e28e635898b}} 
+Game\+Object {\bfseries Root\+\_\+\+Popup}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em 모든 Popup\+UI의 부모 오브젝트 \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_game_core_1_1_u_i_1_1_u_i_manager_ac08f518b4f0c2eed6caec771f6067e62}\label{class_game_core_1_1_u_i_1_1_u_i_manager_ac08f518b4f0c2eed6caec771f6067e62}} 
+\index{GameCore.UI.UIManager@{GameCore.UI.UIManager}!Clear@{Clear}}
+\index{Clear@{Clear}!GameCore.UI.UIManager@{GameCore.UI.UIManager}}
+\doxysubsubsection{\texorpdfstring{Clear()}{Clear()}}
+{\footnotesize\ttfamily void Game\+Core.\+UI.\+UIManager.\+Clear (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+모든 Scene\+UI, Popup\+UI를 제거 
+
+모든 UI를 제거하는 예시입니다. 
+\begin{DoxyCode}{0}
+\DoxyCodeLine{Managers.UI.Clear();}
+
+\end{DoxyCode}
+ \mbox{\Hypertarget{class_game_core_1_1_u_i_1_1_u_i_manager_a48f97a1bb1aefce0fc3311f39a0efb45}\label{class_game_core_1_1_u_i_1_1_u_i_manager_a48f97a1bb1aefce0fc3311f39a0efb45}} 
+\index{GameCore.UI.UIManager@{GameCore.UI.UIManager}!CloseAllPopupUI@{CloseAllPopupUI}}
+\index{CloseAllPopupUI@{CloseAllPopupUI}!GameCore.UI.UIManager@{GameCore.UI.UIManager}}
+\doxysubsubsection{\texorpdfstring{CloseAllPopupUI()}{CloseAllPopupUI()}}
+{\footnotesize\ttfamily void Game\+Core.\+UI.\+UIManager.\+Close\+All\+Popup\+UI (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Popup\+UI Dictionary에 저장된 모든\+UI 제거 
+
+모든 Popup\+UI를 제거하는 예시입니다. 
+\begin{DoxyCode}{0}
+\DoxyCodeLine{Managers.UI.CloseAllPopupUI();}
+
+\end{DoxyCode}
+ \mbox{\Hypertarget{class_game_core_1_1_u_i_1_1_u_i_manager_a1a0ff74390c6c06312826ac5c5d7c88e}\label{class_game_core_1_1_u_i_1_1_u_i_manager_a1a0ff74390c6c06312826ac5c5d7c88e}} 
+\index{GameCore.UI.UIManager@{GameCore.UI.UIManager}!CloseAllSceneUI@{CloseAllSceneUI}}
+\index{CloseAllSceneUI@{CloseAllSceneUI}!GameCore.UI.UIManager@{GameCore.UI.UIManager}}
+\doxysubsubsection{\texorpdfstring{CloseAllSceneUI()}{CloseAllSceneUI()}}
+{\footnotesize\ttfamily void Game\+Core.\+UI.\+UIManager.\+Close\+All\+Scene\+UI (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Scene\+UI Dictionary에 저장된 모든\+UI 제거 
+
+모든 Scene\+UI를 제거하는 예시입니다. 
+\begin{DoxyCode}{0}
+\DoxyCodeLine{Managers.UI.CloseAllSceneUI();}
+
+\end{DoxyCode}
+ \mbox{\Hypertarget{class_game_core_1_1_u_i_1_1_u_i_manager_a450d4bded31d6e5c1cf7f36e70c1edf1}\label{class_game_core_1_1_u_i_1_1_u_i_manager_a450d4bded31d6e5c1cf7f36e70c1edf1}} 
+\index{GameCore.UI.UIManager@{GameCore.UI.UIManager}!ClosePopupUI@{ClosePopupUI}}
+\index{ClosePopupUI@{ClosePopupUI}!GameCore.UI.UIManager@{GameCore.UI.UIManager}}
+\doxysubsubsection{\texorpdfstring{ClosePopupUI()}{ClosePopupUI()}}
+{\footnotesize\ttfamily void Game\+Core.\+UI.\+UIManager.\+Close\+Popup\+UI (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_define_aa509de024dc897309ae4080d1bfea5f5}{Define\+::\+Popup\+UIType}}}]{popup\+UIType }\end{DoxyParamCaption})}
+
+
+
+Popup\+UI Dictionary에 저장된 지정\+UI 제거 
+
+
+\begin{DoxyParams}{Parameters}
+{\em popup\+UIType} & Define.\+Popup\+UIType에 선언된 popup\+UI종류\\
+\hline
+\end{DoxyParams}
+
+
+지정 Popup\+UI를 제거하는 예시입니다. 
+\begin{DoxyCode}{0}
+\DoxyCodeLine{Managers.UI.ClosePopupUI(\mbox{\hyperlink{class_define}{Define}}.\mbox{\hyperlink{class_define_aa509de024dc897309ae4080d1bfea5f5}{PopupUIType}}.Map);}
+
+\end{DoxyCode}
+ \mbox{\Hypertarget{class_game_core_1_1_u_i_1_1_u_i_manager_ada55c9bebf124c8580cec541e04f8807}\label{class_game_core_1_1_u_i_1_1_u_i_manager_ada55c9bebf124c8580cec541e04f8807}} 
+\index{GameCore.UI.UIManager@{GameCore.UI.UIManager}!CloseSceneUI@{CloseSceneUI}}
+\index{CloseSceneUI@{CloseSceneUI}!GameCore.UI.UIManager@{GameCore.UI.UIManager}}
+\doxysubsubsection{\texorpdfstring{CloseSceneUI()}{CloseSceneUI()}}
+{\footnotesize\ttfamily void Game\+Core.\+UI.\+UIManager.\+Close\+Scene\+UI (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_define_a764a80dc9b0829e84b9b05d88abb6d98}{Define\+::\+Scene\+UIType}}}]{scene\+UIType }\end{DoxyParamCaption})}
+
+
+
+Scene\+UI Dictionary에 저장된 지정\+UI 제거 
+
+
+\begin{DoxyParams}{Parameters}
+{\em scene\+UIType} & Define.\+Scene\+UIType에 선언된 scene\+UI종류\\
+\hline
+\end{DoxyParams}
+
+
+지정 Scene\+UI를 제거하는 예시입니다. 
+\begin{DoxyCode}{0}
+\DoxyCodeLine{Managers.UI.CloseSceneUI(\mbox{\hyperlink{class_define}{Define}}.\mbox{\hyperlink{class_define_a764a80dc9b0829e84b9b05d88abb6d98}{SceneUIType}}.UserPanel);}
+
+\end{DoxyCode}
+ \mbox{\Hypertarget{class_game_core_1_1_u_i_1_1_u_i_manager_ae06bffa94b682ea0741c204475b1607b}\label{class_game_core_1_1_u_i_1_1_u_i_manager_ae06bffa94b682ea0741c204475b1607b}} 
+\index{GameCore.UI.UIManager@{GameCore.UI.UIManager}!MakeSubItem$<$ T $>$@{MakeSubItem$<$ T $>$}}
+\index{MakeSubItem$<$ T $>$@{MakeSubItem$<$ T $>$}!GameCore.UI.UIManager@{GameCore.UI.UIManager}}
+\doxysubsubsection{\texorpdfstring{MakeSubItem$<$ T $>$()}{MakeSubItem< T >()}}
+{\footnotesize\ttfamily T Game\+Core.\+UI.\+UIManager.\+Make\+Sub\+Item$<$ T $>$ (\begin{DoxyParamCaption}\item[{Transform}]{parent = {\ttfamily null},  }\item[{string}]{name = {\ttfamily null} }\end{DoxyParamCaption})}
+
+
+
+Sub\+Item생성 함수 
+
+
+\begin{DoxyTemplParams}{Template Parameters}
+{\em T} & UI\+\_\+\+Base를 상속받는 클래스\\
+\hline
+\end{DoxyTemplParams}
+
+\begin{DoxyParams}{Parameters}
+{\em parent} & 부모 UI오브젝트 매개변수\\
+\hline
+{\em name} & 프리팹파일 이름, cs파일과 이름이 같을 시 사용하지 않아도 됨\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+
+
+Sub\+Item을 생성하는 예시입니다. 
+\begin{DoxyCode}{0}
+\DoxyCodeLine{Managers.UI.MakeSubItem<UI\_Item>(go);}
+
+\end{DoxyCode}
+ \begin{Desc}
+\item[Type Constraints]\begin{description}
+\item[{\em T} : {\em UI\+\_\+\+Base}]\end{description}
+\end{Desc}
+\mbox{\Hypertarget{class_game_core_1_1_u_i_1_1_u_i_manager_a89a4b35c5da1fd8124f6820477370b8e}\label{class_game_core_1_1_u_i_1_1_u_i_manager_a89a4b35c5da1fd8124f6820477370b8e}} 
+\index{GameCore.UI.UIManager@{GameCore.UI.UIManager}!MakeWorldSpaceUI$<$ T $>$@{MakeWorldSpaceUI$<$ T $>$}}
+\index{MakeWorldSpaceUI$<$ T $>$@{MakeWorldSpaceUI$<$ T $>$}!GameCore.UI.UIManager@{GameCore.UI.UIManager}}
+\doxysubsubsection{\texorpdfstring{MakeWorldSpaceUI$<$ T $>$()}{MakeWorldSpaceUI< T >()}}
+{\footnotesize\ttfamily T Game\+Core.\+UI.\+UIManager.\+Make\+World\+Space\+UI$<$ T $>$ (\begin{DoxyParamCaption}\item[{Transform}]{parent = {\ttfamily null},  }\item[{string}]{name = {\ttfamily null} }\end{DoxyParamCaption})}
+
+
+
+World\+Space\+UI생성 함수 
+
+
+\begin{DoxyTemplParams}{Template Parameters}
+{\em T} & \\
+\hline
+\end{DoxyTemplParams}
+
+\begin{DoxyParams}{Parameters}
+{\em parent} & \\
+\hline
+{\em name} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+
+
+World\+Space\+UI를 생성하는 예시입니다. 
+\begin{DoxyCode}{0}
+\DoxyCodeLine{Managers.UI.MakeWorldSpaceUI<\mbox{\hyperlink{class_u_i___h_p_bar}{UI\_HPBar}}>(player);}
+
+\end{DoxyCode}
+ \begin{Desc}
+\item[Type Constraints]\begin{description}
+\item[{\em T} : {\em UI\+\_\+\+Base}]\end{description}
+\end{Desc}
+\mbox{\Hypertarget{class_game_core_1_1_u_i_1_1_u_i_manager_a73c312ba9ff4bdccc7b212aab2c59c1d}\label{class_game_core_1_1_u_i_1_1_u_i_manager_a73c312ba9ff4bdccc7b212aab2c59c1d}} 
+\index{GameCore.UI.UIManager@{GameCore.UI.UIManager}!SetCanvas@{SetCanvas}}
+\index{SetCanvas@{SetCanvas}!GameCore.UI.UIManager@{GameCore.UI.UIManager}}
+\doxysubsubsection{\texorpdfstring{SetCanvas()}{SetCanvas()}}
+{\footnotesize\ttfamily void Game\+Core.\+UI.\+UIManager.\+Set\+Canvas (\begin{DoxyParamCaption}\item[{Game\+Object}]{go,  }\item[{bool}]{sort = {\ttfamily true} }\end{DoxyParamCaption})}
+
+
+
+캔버스 설정, Scene\+UI는 sort = false, Popup\+UI는 sort = true 
+
+
+\begin{DoxyParams}{Parameters}
+{\em go} & \\
+\hline
+{\em sort} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_game_core_1_1_u_i_1_1_u_i_manager_a76f4edfe708865c7c6d12b6fdb467233}\label{class_game_core_1_1_u_i_1_1_u_i_manager_a76f4edfe708865c7c6d12b6fdb467233}} 
+\index{GameCore.UI.UIManager@{GameCore.UI.UIManager}!ShowPopupUI@{ShowPopupUI}}
+\index{ShowPopupUI@{ShowPopupUI}!GameCore.UI.UIManager@{GameCore.UI.UIManager}}
+\doxysubsubsection{\texorpdfstring{ShowPopupUI()}{ShowPopupUI()}}
+{\footnotesize\ttfamily Game\+Object Game\+Core.\+UI.\+UIManager.\+Show\+Popup\+UI (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_define_aa509de024dc897309ae4080d1bfea5f5}{Define\+::\+Popup\+UIType}}}]{popup\+UIType,  }\item[{string}]{name }\end{DoxyParamCaption})}
+
+
+
+Popup\+UI를 생성하는 함수 
+
+
+\begin{DoxyParams}{Parameters}
+{\em name} & 프리팹파일 이름, cs파일과 이름이 같을 시 사용하지 않아도 됨\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+
+
+Popup\+UI를 생성, 활성화하는 예시입니다. 
+\begin{DoxyCode}{0}
+\DoxyCodeLine{Managers.UI.ShowPopupUI<UI\_Popup\_Map>(\mbox{\hyperlink{class_define}{Define}}.\mbox{\hyperlink{class_define_aa509de024dc897309ae4080d1bfea5f5}{PopupUIType}}.Map);}
+
+\end{DoxyCode}
+ \mbox{\Hypertarget{class_game_core_1_1_u_i_1_1_u_i_manager_a908c7f1609029f2d057455192a6bb37b}\label{class_game_core_1_1_u_i_1_1_u_i_manager_a908c7f1609029f2d057455192a6bb37b}} 
+\index{GameCore.UI.UIManager@{GameCore.UI.UIManager}!ShowSceneUI@{ShowSceneUI}}
+\index{ShowSceneUI@{ShowSceneUI}!GameCore.UI.UIManager@{GameCore.UI.UIManager}}
+\doxysubsubsection{\texorpdfstring{ShowSceneUI()}{ShowSceneUI()}}
+{\footnotesize\ttfamily Game\+Object Game\+Core.\+UI.\+UIManager.\+Show\+Scene\+UI (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_define_a764a80dc9b0829e84b9b05d88abb6d98}{Define\+::\+Scene\+UIType}}}]{scene\+UIType,  }\item[{string}]{name }\end{DoxyParamCaption})}
+
+
+
+Scene\+UI를 생성하는 합수 
+
+
+\begin{DoxyParams}{Parameters}
+{\em name} & 프리팹파일 이름, cs파일과 이름이 같을 시 사용하지 않아도 됨\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+
+
+Scene\+UI를 생성, 활성화하는 예시입니다. 
+\begin{DoxyCode}{0}
+\DoxyCodeLine{Managers.UI.ShowSceneUI<UI\_Scene\_UserPanel>(\mbox{\hyperlink{class_define}{Define}}.\mbox{\hyperlink{class_define_a764a80dc9b0829e84b9b05d88abb6d98}{SceneUIType}}.UserPanel);}
+
+\end{DoxyCode}
+ 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Assets/\+Scripts/\+Managers/UIManager.\+cs\end{DoxyCompactItemize}

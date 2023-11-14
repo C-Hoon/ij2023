@@ -1,0 +1,22 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: da17ae5b63df5f94a9d383a1cbca5ecf, type: 3}
+  m_Name: ShockDevice
+  m_EditorClassIdentifier: 
+  equipmentName: ShockDevice
+  Image: {fileID: 21300000, guid: 60a5c88b2c601477bbdb428b0ffb7645, type: 3}
+  description: "\uACF5\uACA9\uC2DC \uACF5\uACA9\uB825\uC758 5%\uC758 \uBC94\uC704
+    \uB370\uBBF8\uC9C0\uB97C \uAC00\uD568"
+  contextType: 1
+  amount: 0
+  stat: 9
+  actionType: 2

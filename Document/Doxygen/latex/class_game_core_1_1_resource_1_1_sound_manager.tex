@@ -1,0 +1,94 @@
+\hypertarget{class_game_core_1_1_resource_1_1_sound_manager}{}\doxysection{Game\+Core.\+Resource.\+Sound\+Manager Class Reference}
+\label{class_game_core_1_1_resource_1_1_sound_manager}\index{GameCore.Resource.SoundManager@{GameCore.Resource.SoundManager}}
+
+
+사운드 출력을 관리하는 Sound\+Manager클래스  
+
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_game_core_1_1_resource_1_1_sound_manager_a4e6ae1e8c758463d02ee7976bf69a21b}\label{class_game_core_1_1_resource_1_1_sound_manager_a4e6ae1e8c758463d02ee7976bf69a21b}} 
+void {\bfseries Init} ()
+\item 
+\mbox{\Hypertarget{class_game_core_1_1_resource_1_1_sound_manager_a5ddbf313648bdc74913b45e4c884b3e3}\label{class_game_core_1_1_resource_1_1_sound_manager_a5ddbf313648bdc74913b45e4c884b3e3}} 
+void {\bfseries Clear} ()
+\item 
+void \mbox{\hyperlink{class_game_core_1_1_resource_1_1_sound_manager_a48bfc238487c1aed133ed8ab87fc0796}{Play}} (Audio\+Clip audio\+Clip, \mbox{\hyperlink{class_define_af3b6d42c4ebd7bba9563fb48111f7ac9}{Define.\+Sound}} type=Define.\+Sound.\+Effect, float pitch=1.\+0f)
+\begin{DoxyCompactList}\small\item\em audio\+Clip을 매개변수로 하는 사운드 재생 Play함수 \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_game_core_1_1_resource_1_1_sound_manager_aceb3927f2c19dbe55d146aedb47dda43}{Play}} (string path, \mbox{\hyperlink{class_define_af3b6d42c4ebd7bba9563fb48111f7ac9}{Define.\+Sound}} type=Define.\+Sound.\+Effect, float pitch=1.\+0f)
+\begin{DoxyCompactList}\small\item\em audio\+Clip파일의 주소를 매개변수로 하는 사운드 재생 Play함수 \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_game_core_1_1_resource_1_1_sound_manager_a246e0332cad10ce601b0c216126c30c5}\label{class_game_core_1_1_resource_1_1_sound_manager_a246e0332cad10ce601b0c216126c30c5}} 
+void {\bfseries Set\+Volume} (float value)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+사운드 출력을 관리하는 Sound\+Manager클래스 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_game_core_1_1_resource_1_1_sound_manager_a48bfc238487c1aed133ed8ab87fc0796}\label{class_game_core_1_1_resource_1_1_sound_manager_a48bfc238487c1aed133ed8ab87fc0796}} 
+\index{GameCore.Resource.SoundManager@{GameCore.Resource.SoundManager}!Play@{Play}}
+\index{Play@{Play}!GameCore.Resource.SoundManager@{GameCore.Resource.SoundManager}}
+\doxysubsubsection{\texorpdfstring{Play()}{Play()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily void Game\+Core.\+Resource.\+Sound\+Manager.\+Play (\begin{DoxyParamCaption}\item[{Audio\+Clip}]{audio\+Clip,  }\item[{\mbox{\hyperlink{class_define_af3b6d42c4ebd7bba9563fb48111f7ac9}{Define\+::\+Sound}}}]{type = {\ttfamily Define\+:\+:Sound\+:\+:Effect},  }\item[{float}]{pitch = {\ttfamily 1\+:\+:0f} }\end{DoxyParamCaption})}
+
+
+
+audio\+Clip을 매개변수로 하는 사운드 재생 Play함수 
+
+
+\begin{DoxyParams}{Parameters}
+{\em audio\+Clip} & Audio\+Clip데이터 형식의 사운드파일\\
+\hline
+{\em type} & Define.\+Sound의 열거형값, 배경음악은 Define.\+Sound.\+BGM, 이펙트사운드는 Define.\+Sound.\+Effect\\
+\hline
+{\em pitch} & 사운드의 재생속도, 디폴트값 1.\+0f\\
+\hline
+\end{DoxyParams}
+
+
+사운드를 재생하는 예시입니다. 
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\textcolor{comment}{//배경을악을\ 재생하기\ 위해}}
+\DoxyCodeLine{AudioClip\ BGM;}
+\DoxyCodeLine{Managers.Sound.Play(BGM,\ \mbox{\hyperlink{class_define}{Define}}.\mbox{\hyperlink{class_define_af3b6d42c4ebd7bba9563fb48111f7ac9}{Sound}}.Bgm);}
+\DoxyCodeLine{\textcolor{comment}{//또는\ 이펙트사운드를\ 재생하기\ 위해}}
+\DoxyCodeLine{AudioClip\ Effect;}
+\DoxyCodeLine{Managers.Sound.Play(Effect);}
+
+\end{DoxyCode}
+ \mbox{\Hypertarget{class_game_core_1_1_resource_1_1_sound_manager_aceb3927f2c19dbe55d146aedb47dda43}\label{class_game_core_1_1_resource_1_1_sound_manager_aceb3927f2c19dbe55d146aedb47dda43}} 
+\index{GameCore.Resource.SoundManager@{GameCore.Resource.SoundManager}!Play@{Play}}
+\index{Play@{Play}!GameCore.Resource.SoundManager@{GameCore.Resource.SoundManager}}
+\doxysubsubsection{\texorpdfstring{Play()}{Play()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily void Game\+Core.\+Resource.\+Sound\+Manager.\+Play (\begin{DoxyParamCaption}\item[{string}]{path,  }\item[{\mbox{\hyperlink{class_define_af3b6d42c4ebd7bba9563fb48111f7ac9}{Define\+::\+Sound}}}]{type = {\ttfamily Define\+:\+:Sound\+:\+:Effect},  }\item[{float}]{pitch = {\ttfamily 1\+:\+:0f} }\end{DoxyParamCaption})}
+
+
+
+audio\+Clip파일의 주소를 매개변수로 하는 사운드 재생 Play함수 
+
+
+\begin{DoxyParams}{Parameters}
+{\em path} & Audio\+Clip파일의 주소, Assets/\+Resources/\+Sounds/뒤의 주소만 작성\\
+\hline
+{\em type} & Define.\+Sound의 열거형값, 배경음악은 Define.\+Sound.\+BGM, 이펙트사운드는 Define.\+Sound.\+Effect, 디폴트값은 이펙트사운드입니다.\\
+\hline
+{\em pitch} & 사운드의 재생속도, 디폴트값 1.\+0f\\
+\hline
+\end{DoxyParams}
+
+
+사운드를 재생하는 예시입니다. 
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\textcolor{comment}{//배경을악을\ 재생하기\ 위해}}
+\DoxyCodeLine{Managers.Sound.Play(\textcolor{stringliteral}{"{}BGM/BGM\_01"{}},\ \mbox{\hyperlink{class_define}{Define}}.\mbox{\hyperlink{class_define_af3b6d42c4ebd7bba9563fb48111f7ac9}{Sound}}.Bgm);}
+\DoxyCodeLine{\textcolor{comment}{//또는\ 이펙트사운드를\ 재생하기\ 위해}}
+\DoxyCodeLine{Managers.Sound.Play(\textcolor{stringliteral}{"{}Effect/Effect\_01"{}});}
+
+\end{DoxyCode}
+ 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Assets/\+Scripts/\+Managers/Sound\+Manager.\+cs\end{DoxyCompactItemize}

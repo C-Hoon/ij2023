@@ -1,0 +1,16 @@
+{
+    "category": {
+        "codeName": "",
+        "displayName": ""
+    },
+    "icon": "",
+    "codeName": "haha",
+    "displayName": "",
+    "description": "",
+    "taskGroups": [],
+    "rewards": [],
+    "useAutoComplete": false,
+    "isCancelable": false,
+    "acceptionConditions": [],
+    "cancelConditions": []
+}

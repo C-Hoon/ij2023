@@ -1,0 +1,73 @@
+{
+    "category": {
+        "codeName": "",
+        "displayName": ""
+    },
+    "iconPath": "Images/Quest/img",
+    "codeName": "Look_Quest",
+    "displayName": "123",
+    "description": "어느 화면을 보아라",
+    "taskGroups": [
+        {
+            "tasks": [
+                {
+                    "codeName": "123",
+                    "description": "412412",
+                    "actionType": "44",
+                    "targetsCodeName": [],
+                    "needSuccessToComplete": 0,
+                    "canReceiveReportsDuringCompletion": false,
+                    "currentSuccess": 0
+                },
+                {
+                    "codeName": "123",
+                    "description": "123",
+                    "actionType": "31",
+                    "targetsCodeName": [],
+                    "needSuccessToComplete": 0,
+                    "canReceiveReportsDuringCompletion": false,
+                    "currentSuccess": 0
+                }
+            ]
+        },
+        {
+            "tasks": [
+                {
+                    "codeName": "12312",
+                    "description": "",
+                    "actionType": "",
+                    "targetsCodeName": [],
+                    "needSuccessToComplete": 0,
+                    "canReceiveReportsDuringCompletion": false,
+                    "currentSuccess": 0
+                }
+            ]
+        }
+    ],
+    "rewards": [
+        {
+            "itemIconPath": "",
+            "description": "",
+            "itemCodeName": "",
+            "quantity": 0
+        },
+        {
+            "itemIconPath": "",
+            "description": "",
+            "itemCodeName": "",
+            "quantity": 0
+        }
+    ],
+    "useAutoComplete": true,
+    "isCancelable": true,
+    "acceptionConditions": [
+        {
+            "description": ""
+        }
+    ],
+    "cancelConditions": [
+        {
+            "description": ""
+        }
+    ]
+}

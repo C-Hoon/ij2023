@@ -1,0 +1,22 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: da17ae5b63df5f94a9d383a1cbca5ecf, type: 3}
+  m_Name: ReflectShield
+  m_EditorClassIdentifier: 
+  equipmentName: ReflectShield
+  Image: {fileID: 21300000, guid: ff21e8de9a5bc4b3a80f9c926cc4bc2d, type: 3}
+  description: "\uD53C\uACA9\uC2DC \uD50C\uB808\uC774\uC5B4 \uACF5\uACA9\uB825\uC758
+    10\uD37C\uC13C\uD2B8\uC758 \uBC18\uC0AC\uB370\uBBF8\uC9C0\uB97C \uAC00\uC0BC"
+  contextType: 1
+  amount: 0
+  stat: 11
+  actionType: 1

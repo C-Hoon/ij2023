@@ -1,0 +1,166 @@
+\hypertarget{class_game_core_1_1_resource_1_1_resource_manager}{}\doxysection{Game\+Core.\+Resource.\+Resource\+Manager Class Reference}
+\label{class_game_core_1_1_resource_1_1_resource_manager}\index{GameCore.Resource.ResourceManager@{GameCore.Resource.ResourceManager}}
+
+
+프리팹 생성, 파괴등을 관리하는 Resource\+Manager클래스  
+
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+T \mbox{\hyperlink{class_game_core_1_1_resource_1_1_resource_manager_a7be9a25331cbd3a17ac419fb06c68ddc}{Load$<$ T $>$}} (string path)
+\begin{DoxyCompactList}\small\item\em resource폴더 path주소값의 리소스를 로드하는 Load함수 \end{DoxyCompactList}\item 
+Game\+Object \mbox{\hyperlink{class_game_core_1_1_resource_1_1_resource_manager_a13528be31e76b5b779b33fe57b9d7043}{Instantiate}} (string path, Transform parent=null)
+\begin{DoxyCompactList}\small\item\em 프리팹 인스턴스(게임오브젝트) 생성 함수 \end{DoxyCompactList}\item 
+Game\+Object \mbox{\hyperlink{class_game_core_1_1_resource_1_1_resource_manager_a09651bb7e1481d8bd2b827ceadf94e7b}{Instantiate}} (string path, Vector2 vector, Quaternion rotation, Transform parent=null)
+\begin{DoxyCompactList}\small\item\em 위치 지정 인스턴스(게임오브젝트) 생성 함수 \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_game_core_1_1_resource_1_1_resource_manager_ac9b1e0a9ae091b0c840e0951f95b357e}{Destroy}} (Game\+Object go)
+\begin{DoxyCompactList}\small\item\em 게임 오브젝트 제거 함수 \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+프리팹 생성, 파괴등을 관리하는 Resource\+Manager클래스 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_game_core_1_1_resource_1_1_resource_manager_ac9b1e0a9ae091b0c840e0951f95b357e}\label{class_game_core_1_1_resource_1_1_resource_manager_ac9b1e0a9ae091b0c840e0951f95b357e}} 
+\index{GameCore.Resource.ResourceManager@{GameCore.Resource.ResourceManager}!Destroy@{Destroy}}
+\index{Destroy@{Destroy}!GameCore.Resource.ResourceManager@{GameCore.Resource.ResourceManager}}
+\doxysubsubsection{\texorpdfstring{Destroy()}{Destroy()}}
+{\footnotesize\ttfamily int Game\+Core.\+Resource.\+Resource\+Manager.\+Destroy (\begin{DoxyParamCaption}\item[{Game\+Object}]{go }\end{DoxyParamCaption})}
+
+
+
+게임 오브젝트 제거 함수 
+
+
+\begin{DoxyParams}{Parameters}
+{\em go} & 제거할 오브젝트\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+0 정상 작동, -\/1 에러 발생, 1 정상 작동(오브젝트 폴링 적용) 
+\end{DoxyReturn}
+
+
+게임오브젝트를 제거하는 예시입니다. 
+\begin{DoxyCode}{0}
+\DoxyCodeLine{GameObject\ go\ =\ \textcolor{keyword}{new}\ GameObject(\textcolor{stringliteral}{"{}ObjectName"{}});}
+\DoxyCodeLine{\textcolor{keywordtype}{int}\ i\ =\ Managers.Resource.Destroy(go);}
+\DoxyCodeLine{\textcolor{keywordflow}{switch}\ (i)}
+\DoxyCodeLine{\{}
+\DoxyCodeLine{\ \ \ \textcolor{keywordflow}{case}\ -\/1:}
+\DoxyCodeLine{\ \ \ \ \ \ \ Debug.Log(\textcolor{stringliteral}{"{}에러\ 발생"{}})}
+\DoxyCodeLine{\ \ \ \ \ \ \ \textcolor{keywordflow}{break};}
+\DoxyCodeLine{\ \ \ \textcolor{keywordflow}{case}\ 0:}
+\DoxyCodeLine{\ \ \ \ \ \ \ Debug.Log(\textcolor{stringliteral}{"{}정상\ 작동"{}})}
+\DoxyCodeLine{\ \ \ \ \ \ \ \textcolor{keywordflow}{break};}
+\DoxyCodeLine{\ \ \ \textcolor{keywordflow}{case}\ 1:}
+\DoxyCodeLine{\ \ \ \ \ \ \ Debug.Log(\textcolor{stringliteral}{"{}정상\ 작동(오브젝트\ 폴링)"{}})}
+\DoxyCodeLine{\ \ \ \ \ \ \ \textcolor{keywordflow}{break};}
+\DoxyCodeLine{\}}
+
+\end{DoxyCode}
+ 예시이며 리턴값을 받아 체크하지 않아도 됩니다. \mbox{\Hypertarget{class_game_core_1_1_resource_1_1_resource_manager_a13528be31e76b5b779b33fe57b9d7043}\label{class_game_core_1_1_resource_1_1_resource_manager_a13528be31e76b5b779b33fe57b9d7043}} 
+\index{GameCore.Resource.ResourceManager@{GameCore.Resource.ResourceManager}!Instantiate@{Instantiate}}
+\index{Instantiate@{Instantiate}!GameCore.Resource.ResourceManager@{GameCore.Resource.ResourceManager}}
+\doxysubsubsection{\texorpdfstring{Instantiate()}{Instantiate()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily Game\+Object Game\+Core.\+Resource.\+Resource\+Manager.\+Instantiate (\begin{DoxyParamCaption}\item[{string}]{path,  }\item[{Transform}]{parent = {\ttfamily null} }\end{DoxyParamCaption})}
+
+
+
+프리팹 인스턴스(게임오브젝트) 생성 함수 
+
+
+\begin{DoxyParams}{Parameters}
+{\em path} & 프리팹의 주소, $\sim$\+Prefabs/뒤의 부분만 \\
+\hline
+{\em parent} & 프리팹의 부모 오브젝트 설정\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+생성된 Game\+Object 반환
+\end{DoxyReturn}
+
+
+프리팹 인스턴스(게임오브젝트)를 생성하는 예시입니다. 
+\begin{DoxyCode}{0}
+\DoxyCodeLine{GameObject\ go\ =\ Managers.Resource.Instantiate(\textcolor{stringliteral}{"{}Character/Player"{}});}
+
+\end{DoxyCode}
+ \mbox{\Hypertarget{class_game_core_1_1_resource_1_1_resource_manager_a09651bb7e1481d8bd2b827ceadf94e7b}\label{class_game_core_1_1_resource_1_1_resource_manager_a09651bb7e1481d8bd2b827ceadf94e7b}} 
+\index{GameCore.Resource.ResourceManager@{GameCore.Resource.ResourceManager}!Instantiate@{Instantiate}}
+\index{Instantiate@{Instantiate}!GameCore.Resource.ResourceManager@{GameCore.Resource.ResourceManager}}
+\doxysubsubsection{\texorpdfstring{Instantiate()}{Instantiate()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily Game\+Object Game\+Core.\+Resource.\+Resource\+Manager.\+Instantiate (\begin{DoxyParamCaption}\item[{string}]{path,  }\item[{Vector2}]{vector,  }\item[{Quaternion}]{rotation,  }\item[{Transform}]{parent = {\ttfamily null} }\end{DoxyParamCaption})}
+
+
+
+위치 지정 인스턴스(게임오브젝트) 생성 함수 
+
+
+\begin{DoxyParams}{Parameters}
+{\em path} & 프리팹의 주소, $\sim$\+Prefabs/뒤의 부분만 \\
+\hline
+{\em vector} & 프리팹 인스턴스를 생성할 위치\\
+\hline
+{\em rotation} & 프리팹 인스턴스가 생성될 때의 방향(Quaternion.\+identity을 입력)\\
+\hline
+{\em parent} & 프리팹의 부모 설정\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+생성된 Game\+Object 반환
+\end{DoxyReturn}
+
+
+프리팹 인스턴스(게임오브젝트)를 생성하는 예시입니다.~\newline
+Quaternion값은 회전없음을 나타내는 값인 Quaternion.\+identity을 입력하도록 합니다. 
+\begin{DoxyCode}{0}
+\DoxyCodeLine{GameObject\ go\ =\ Managers.Resource.Instantiate(\textcolor{stringliteral}{"{}Character/Player"{}},\ Vector2.zero,\ Quaternion.identity);}
+
+\end{DoxyCode}
+ \mbox{\Hypertarget{class_game_core_1_1_resource_1_1_resource_manager_a7be9a25331cbd3a17ac419fb06c68ddc}\label{class_game_core_1_1_resource_1_1_resource_manager_a7be9a25331cbd3a17ac419fb06c68ddc}} 
+\index{GameCore.Resource.ResourceManager@{GameCore.Resource.ResourceManager}!Load$<$ T $>$@{Load$<$ T $>$}}
+\index{Load$<$ T $>$@{Load$<$ T $>$}!GameCore.Resource.ResourceManager@{GameCore.Resource.ResourceManager}}
+\doxysubsubsection{\texorpdfstring{Load$<$ T $>$()}{Load< T >()}}
+{\footnotesize\ttfamily T Game\+Core.\+Resource.\+Resource\+Manager.\+Load$<$ T $>$ (\begin{DoxyParamCaption}\item[{string}]{path }\end{DoxyParamCaption})}
+
+
+
+resource폴더 path주소값의 리소스를 로드하는 Load함수 
+
+
+\begin{DoxyParams}{Parameters}
+{\em path} & 리소스의 주소\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyTemplParams}{Template Parameters}
+{\em T} & 리소스의 타입\\
+\hline
+\end{DoxyTemplParams}
+
+
+리소스의 타입에 대해 ~\newline
+
+\begin{DoxyItemize}
+\item txt, json파일은 Text\+Asset 타입  
+\item 텍스쳐로 사용할 png파일은 Texture2D 타입  
+\item sprite로 사용할 png파일은 Sprite 타입  
+\item 사운드 mp3등의 파일은 Audio\+Clip타입  
+\end{DoxyItemize}
+
+리소스를 로드하는 예시입니다. 
+\begin{DoxyCode}{0}
+\DoxyCodeLine{var\ hitSound\ =\ Managers.Resource.Load<AudioClip타입>(\textcolor{stringliteral}{"{}sound/hit.mp3"{}});}
+
+\end{DoxyCode}
+ \begin{Desc}
+\item[Type Constraints]\begin{description}
+\item[{\em T} : {\em Object}]\end{description}
+\end{Desc}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Assets/\+Scripts/\+Managers/Resource\+Manager.\+cs\end{DoxyCompactItemize}

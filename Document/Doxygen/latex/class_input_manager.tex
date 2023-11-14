@@ -1,0 +1,85 @@
+\hypertarget{class_input_manager}{}\doxysection{Input\+Manager Class Reference}
+\label{class_input_manager}\index{InputManager@{InputManager}}
+
+
+기능에 키를 할당해주고 입출력을 관리, 체크하는 Input\+Manager클래스  
+
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_input_manager_a32bf35eb98f21f0ccac513c011c2f19a}\label{class_input_manager_a32bf35eb98f21f0ccac513c011c2f19a}} 
+delegate void {\bfseries key\+Event} ()
+\item 
+\mbox{\Hypertarget{class_input_manager_a5c6e05c9344af57453f9d0e0b3b59246}\label{class_input_manager_a5c6e05c9344af57453f9d0e0b3b59246}} 
+void {\bfseries Init} ()
+\item 
+\mbox{\Hypertarget{class_input_manager_aeca228c73423d4b2d6291ec9c020c0cb}\label{class_input_manager_aeca228c73423d4b2d6291ec9c020c0cb}} 
+void {\bfseries On\+Update} ()
+\item 
+\mbox{\Hypertarget{class_input_manager_ad48d142e437d181065a5136b36a172ec}\label{class_input_manager_ad48d142e437d181065a5136b36a172ec}} 
+void {\bfseries Clear} ()
+\item 
+void \mbox{\hyperlink{class_input_manager_af881abef959bd7178c7caac5ddedf1e0}{Key\+Customize}} (Define.\+Key\+Action key\+Action, Key\+Code key\+Code)
+\begin{DoxyCompactList}\small\item\em \mbox{[}기능 -\/ 키\mbox{]} 매핑 Key\+Customize함수 \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_input_manager_a0f2cd6a6d38c2452795c915449592174}{Pushkey\+Event\+Dictionary}} (Define.\+Key\+Action key\+Action, key\+Event k\+Event)
+\begin{DoxyCompactList}\small\item\em \mbox{[}기능 -\/ 구현함수\mbox{]} 매핑 커스텀마이즈 Pushkey\+Event\+Dictionary함수 \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+기능에 키를 할당해주고 입출력을 관리, 체크하는 Input\+Manager클래스 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_input_manager_af881abef959bd7178c7caac5ddedf1e0}\label{class_input_manager_af881abef959bd7178c7caac5ddedf1e0}} 
+\index{InputManager@{InputManager}!KeyCustomize@{KeyCustomize}}
+\index{KeyCustomize@{KeyCustomize}!InputManager@{InputManager}}
+\doxysubsubsection{\texorpdfstring{KeyCustomize()}{KeyCustomize()}}
+{\footnotesize\ttfamily void Input\+Manager.\+Key\+Customize (\begin{DoxyParamCaption}\item[{Define\+::\+Key\+Action}]{key\+Action,  }\item[{Key\+Code}]{key\+Code }\end{DoxyParamCaption})}
+
+
+
+\mbox{[}기능 -\/ 키\mbox{]} 매핑 Key\+Customize함수 
+
+
+\begin{DoxyParams}{Parameters}
+{\em key\+Action} & Define.\+Key\+Action에 선언된 기능\\
+\hline
+{\em key\+Code} & Key\+Code의 키값\\
+\hline
+\end{DoxyParams}
+
+
+키와 기능을 매핑하는 예시입니다. 
+\begin{DoxyCode}{0}
+\DoxyCodeLine{Managers.Input.KeyCustomize(\mbox{\hyperlink{class_define}{Define}}.KeyAction.UP,\ KeyCode.W);}
+
+\end{DoxyCode}
+ \mbox{\Hypertarget{class_input_manager_a0f2cd6a6d38c2452795c915449592174}\label{class_input_manager_a0f2cd6a6d38c2452795c915449592174}} 
+\index{InputManager@{InputManager}!PushkeyEventDictionary@{PushkeyEventDictionary}}
+\index{PushkeyEventDictionary@{PushkeyEventDictionary}!InputManager@{InputManager}}
+\doxysubsubsection{\texorpdfstring{PushkeyEventDictionary()}{PushkeyEventDictionary()}}
+{\footnotesize\ttfamily void Input\+Manager.\+Pushkey\+Event\+Dictionary (\begin{DoxyParamCaption}\item[{Define\+::\+Key\+Action}]{key\+Action,  }\item[{key\+Event}]{k\+Event }\end{DoxyParamCaption})}
+
+
+
+\mbox{[}기능 -\/ 구현함수\mbox{]} 매핑 커스텀마이즈 Pushkey\+Event\+Dictionary함수 
+
+
+\begin{DoxyParams}{Parameters}
+{\em key\+Action} & Define.\+Key\+Action에 선언된 기능\\
+\hline
+{\em k\+Event} & 구현된 기능의 함수\\
+\hline
+\end{DoxyParams}
+
+
+기능과 구현함수를 매핑하는 예시입니다. 
+\begin{DoxyCode}{0}
+\DoxyCodeLine{Managers.Input.PushkeyEventDictionary(\mbox{\hyperlink{class_define}{Define}}.KeyAction.UP,\ MoveToUp);}
+
+\end{DoxyCode}
+ 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Assets/\+Scripts/\+Managers/Input\+Manager.\+cs\end{DoxyCompactItemize}

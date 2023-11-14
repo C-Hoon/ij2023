@@ -1,0 +1,139 @@
+\hypertarget{class_quest_system_1_1_achievement}{}\doxysection{Quest\+System.\+Achievement Class Reference}
+\label{class_quest_system_1_1_achievement}\index{QuestSystem.Achievement@{QuestSystem.Achievement}}
+Inheritance diagram for Quest\+System.\+Achievement\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_quest_system_1_1_achievement}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+override void \mbox{\hyperlink{class_quest_system_1_1_achievement_a4a32b169deb1b84f96dc6ce57d23961a}{Cancel}} ()
+\begin{DoxyCompactList}\small\item\em Quest를 취소했을 때 실행할 함수 \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Member Functions inherited from \mbox{\hyperlink{class_quest_system_1_1_quest}{Quest\+System.\+Quest}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_quest_system_1_1_quest_a1219d3cd9b12c11685dc07e57c624085}\label{class_quest_system_1_1_quest_a1219d3cd9b12c11685dc07e57c624085}} 
+delegate void {\bfseries Task\+Success\+Change\+Handler} (\mbox{\hyperlink{class_quest_system_1_1_quest}{Quest}} quest, \mbox{\hyperlink{class_quest_system_1_1_task}{Task}} task, int current\+Success, int prev\+Success)
+\item 
+\mbox{\Hypertarget{class_quest_system_1_1_quest_aa37c29cced6d5b9d1cc3b1d37a97804f}\label{class_quest_system_1_1_quest_aa37c29cced6d5b9d1cc3b1d37a97804f}} 
+delegate void {\bfseries Completed\+Handler} (\mbox{\hyperlink{class_quest_system_1_1_quest}{Quest}} quest)
+\item 
+\mbox{\Hypertarget{class_quest_system_1_1_quest_aa8d2e1b48d9891583402a259e839767b}\label{class_quest_system_1_1_quest_aa8d2e1b48d9891583402a259e839767b}} 
+delegate void {\bfseries Canceled\+Handler} (\mbox{\hyperlink{class_quest_system_1_1_quest}{Quest}} quest)
+\item 
+\mbox{\Hypertarget{class_quest_system_1_1_quest_a9c924b420d78ab486c7ab3279935feb8}\label{class_quest_system_1_1_quest_a9c924b420d78ab486c7ab3279935feb8}} 
+delegate void {\bfseries New\+Task\+Group\+Handler} (\mbox{\hyperlink{class_quest_system_1_1_quest}{Quest}} quest, \mbox{\hyperlink{class_quest_system_1_1_task_group}{Task\+Group}} current\+Task\+Group, \mbox{\hyperlink{class_quest_system_1_1_task_group}{Task\+Group}} prev\+Task\+Group)
+\item 
+\mbox{\Hypertarget{class_quest_system_1_1_quest_ad8d99ff1365e1a4bcb4c3deea0a48341}\label{class_quest_system_1_1_quest_ad8d99ff1365e1a4bcb4c3deea0a48341}} 
+void {\bfseries On\+Register} ()
+\begin{DoxyCompactList}\small\item\em Awake역할의 함수로 Quest가 Syetem에 등록되었을 때 실행됨 \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_quest_system_1_1_quest_a4b1c7e15a1ac785857943d2b8ea6a1a6}{Receive\+Report}} (string category, object target, int success\+Count)
+\begin{DoxyCompactList}\small\item\em 보고 받았을 때 실행할 함수 \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_quest_system_1_1_quest_adcbed1e3c624f7551c25b709b3f7b465}\label{class_quest_system_1_1_quest_adcbed1e3c624f7551c25b709b3f7b465}} 
+void {\bfseries Complete} ()
+\begin{DoxyCompactList}\small\item\em Quest를 완료했을 때 실행할 함수 \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{class_quest_system_1_1_quest_a06fba0bc09dd4f7949c3b7abba2dec88}{Cancel}} ()
+\begin{DoxyCompactList}\small\item\em Quest를 취소했을 때 실행할 함수 \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_quest_system_1_1_quest_ab8aa80ba91ba99ecdb2588b335e20b17}\label{class_quest_system_1_1_quest_ab8aa80ba91ba99ecdb2588b335e20b17}} 
+\mbox{\hyperlink{struct_quest_system_1_1_quest_save_data}{Quest\+Save\+Data}} {\bfseries To\+Save\+Data} ()
+\item 
+\mbox{\Hypertarget{class_quest_system_1_1_quest_a05760f79e6625e5f15a542b3c99c2435}\label{class_quest_system_1_1_quest_a05760f79e6625e5f15a542b3c99c2435}} 
+void {\bfseries Load\+From} (\mbox{\hyperlink{struct_quest_system_1_1_quest_save_data}{Quest\+Save\+Data}} save\+Data)
+\item 
+\mbox{\Hypertarget{class_quest_system_1_1_quest_a28f9fc687d5a132e3215c2057d210a53}\label{class_quest_system_1_1_quest_a28f9fc687d5a132e3215c2057d210a53}} 
+void {\bfseries Quest\+Load\+As\+Json} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_quest_system_1_1_achievement_ab08c0df3ec0421e734c984db6e052856}\label{class_quest_system_1_1_achievement_ab08c0df3ec0421e734c984db6e052856}} 
+override bool {\bfseries Is\+Cancelable}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Properties inherited from \mbox{\hyperlink{class_quest_system_1_1_quest}{Quest\+System.\+Quest}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_quest_system_1_1_quest_a923f9855229923680f598bb1044e2e7e}\label{class_quest_system_1_1_quest_a923f9855229923680f598bb1044e2e7e}} 
+\mbox{\hyperlink{class_category}{Category}} {\bfseries Category}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\item 
+\mbox{\Hypertarget{class_quest_system_1_1_quest_a6c7b2309ec707cfca25a5c8f6d1e2a85}\label{class_quest_system_1_1_quest_a6c7b2309ec707cfca25a5c8f6d1e2a85}} 
+Sprite {\bfseries Icon}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\item 
+\mbox{\Hypertarget{class_quest_system_1_1_quest_a62737ca66d9122934a7ebfb38c893ba9}\label{class_quest_system_1_1_quest_a62737ca66d9122934a7ebfb38c893ba9}} 
+string {\bfseries Code\+Name}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\item 
+\mbox{\Hypertarget{class_quest_system_1_1_quest_aab5537be76cad5b43544b5d2e2fb2251}\label{class_quest_system_1_1_quest_aab5537be76cad5b43544b5d2e2fb2251}} 
+string {\bfseries Desplay\+Name}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\item 
+\mbox{\Hypertarget{class_quest_system_1_1_quest_a995a6658bb34fcabf5acb6451be084e8}\label{class_quest_system_1_1_quest_a995a6658bb34fcabf5acb6451be084e8}} 
+string {\bfseries Description}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\item 
+\mbox{\Hypertarget{class_quest_system_1_1_quest_a16bd05df1d9c524d729c2dddb39ad11f}\label{class_quest_system_1_1_quest_a16bd05df1d9c524d729c2dddb39ad11f}} 
+Quest\+State {\bfseries State}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\item 
+\mbox{\Hypertarget{class_quest_system_1_1_quest_a907eae64578553f2ae7b11e3e9cb9862}\label{class_quest_system_1_1_quest_a907eae64578553f2ae7b11e3e9cb9862}} 
+\mbox{\hyperlink{class_quest_system_1_1_task_group}{Task\+Group}} {\bfseries Current\+Task\+Group}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\item 
+\mbox{\Hypertarget{class_quest_system_1_1_quest_ac0c0131898cc8e1e969388016ec3a4fe}\label{class_quest_system_1_1_quest_ac0c0131898cc8e1e969388016ec3a4fe}} 
+IRead\+Only\+List$<$ \mbox{\hyperlink{class_quest_system_1_1_task_group}{Task\+Group}} $>$ {\bfseries Task\+Groups}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\item 
+\mbox{\Hypertarget{class_quest_system_1_1_quest_ab9876ad84b0f4eef0b0ea8955b22e155}\label{class_quest_system_1_1_quest_ab9876ad84b0f4eef0b0ea8955b22e155}} 
+IRead\+Only\+List$<$ \mbox{\hyperlink{class_quest_system_1_1_reward}{Reward}} $>$ {\bfseries Rewards}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\item 
+\mbox{\Hypertarget{class_quest_system_1_1_quest_a2e5f9f6ccae5949394069d8cd14fe81d}\label{class_quest_system_1_1_quest_a2e5f9f6ccae5949394069d8cd14fe81d}} 
+bool {\bfseries Is\+Registered}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\item 
+\mbox{\Hypertarget{class_quest_system_1_1_quest_a74f01c07c22389ea7affaf68228d66b0}\label{class_quest_system_1_1_quest_a74f01c07c22389ea7affaf68228d66b0}} 
+bool {\bfseries Is\+Complatable}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\item 
+\mbox{\Hypertarget{class_quest_system_1_1_quest_a9b9e9b51c882adb8081e39d184256684}\label{class_quest_system_1_1_quest_a9b9e9b51c882adb8081e39d184256684}} 
+bool {\bfseries Is\+Complete}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\item 
+\mbox{\Hypertarget{class_quest_system_1_1_quest_acd2e525c9681a265eb471a4282e005bc}\label{class_quest_system_1_1_quest_acd2e525c9681a265eb471a4282e005bc}} 
+bool {\bfseries Is\+Cancel}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\item 
+\mbox{\Hypertarget{class_quest_system_1_1_quest_aa12b348ff72b0895d143de0313c28331}\label{class_quest_system_1_1_quest_aa12b348ff72b0895d143de0313c28331}} 
+virtual bool {\bfseries Is\+Cancelable}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\item 
+\mbox{\Hypertarget{class_quest_system_1_1_quest_ae43ac4f0181e3dfc50e532db9ff2f3c4}\label{class_quest_system_1_1_quest_ae43ac4f0181e3dfc50e532db9ff2f3c4}} 
+bool {\bfseries Is\+Acceptable}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+\doxysubsubsection*{Events inherited from \mbox{\hyperlink{class_quest_system_1_1_quest}{Quest\+System.\+Quest}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_quest_system_1_1_quest_ad68ee3500cd517d069918380cc281929}\label{class_quest_system_1_1_quest_ad68ee3500cd517d069918380cc281929}} 
+Task\+Success\+Change\+Handler {\bfseries on\+Task\+Success\+Changed}
+\item 
+\mbox{\Hypertarget{class_quest_system_1_1_quest_a85072970d53c0f86f523b4f66bd2fc7a}\label{class_quest_system_1_1_quest_a85072970d53c0f86f523b4f66bd2fc7a}} 
+Completed\+Handler {\bfseries on\+Completed}
+\item 
+\mbox{\Hypertarget{class_quest_system_1_1_quest_a731cd534c73e874b5eec3daad1d00222}\label{class_quest_system_1_1_quest_a731cd534c73e874b5eec3daad1d00222}} 
+Canceled\+Handler {\bfseries on\+Canceled}
+\item 
+\mbox{\Hypertarget{class_quest_system_1_1_quest_af7d512b58addd834344fe2143289e518}\label{class_quest_system_1_1_quest_af7d512b58addd834344fe2143289e518}} 
+New\+Task\+Group\+Handler {\bfseries on\+New\+Task\+Group}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_quest_system_1_1_achievement_a4a32b169deb1b84f96dc6ce57d23961a}\label{class_quest_system_1_1_achievement_a4a32b169deb1b84f96dc6ce57d23961a}} 
+\index{QuestSystem.Achievement@{QuestSystem.Achievement}!Cancel@{Cancel}}
+\index{Cancel@{Cancel}!QuestSystem.Achievement@{QuestSystem.Achievement}}
+\doxysubsubsection{\texorpdfstring{Cancel()}{Cancel()}}
+{\footnotesize\ttfamily override void Quest\+System.\+Achievement.\+Cancel (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Quest를 취소했을 때 실행할 함수 
+
+
+
+Reimplemented from \mbox{\hyperlink{class_quest_system_1_1_quest_a06fba0bc09dd4f7949c3b7abba2dec88}{Quest\+System.\+Quest}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Assets/\+Scripts/\+Quest\+Systems/Achievement.\+cs\end{DoxyCompactItemize}
